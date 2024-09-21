@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+   font-family: Montserrat, sans-serif; 
+} 
+
+header {
+    grid-column: 1/3;
+}
+
+h1 {
+    background-color: darkolivegreen;
+    padding: 1.5rem;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+nav {
+    background-color: #a3b2c8;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav a {
+    color: darkolivegreen;
+    display: block;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: coral;
+}
+
+nav a:visited {
+    color: sienna;
+}
+
+nav a:hover:visited {
+    color: coral;
+}
+
+main { 
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    width: 100%;
+}
+
+h2 {
+    
+    text-align: center;
+    background-color: darkolivegreen;
+    border-radius: 10px;
+    padding: 10px 40px;
+    font-size: 300;
+}
+
+
+.card {
+    margin: 1rem auto;
+    border: 2px solid darkolivegreen;
+    box-shadow : 5px 5px 2.5px #283618;
+    padding : 20px;
+    padding-top: 3px;
+    margin : 10px;
+    border-radius: 0.5rem;
+    background-color: #eee;
+
+}
+
+article {
+    padding-bottom: 2rem;
+}
+
+article img {
+    width: 150px;
+    height: auto;
+    border: 1px solid steelblue;
+    padding: 2px;
+    box-shadow: 0 0 20px gray;
+    float: right;
+    margin: 0 1rem;
+}
+
+article p {
+    margin: 2rem;
+}
+.country {
+    border-bottom: 1px solid #283618;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.4rem;
+}
+.brief-info img {
+    margin-top: 2.5rem;
+    margin-left: 1.5rem;
+}
+
+.brief-info p {
+    margin: 2rem;
+    margin-right: 1rem;
+}
+
+.brief-info {
+    display : grid;
+    grid-template-columns : 1fr 2fr;
+    gap : 20px;
+}
+
+.brief-info img {
+    max-width : 100%;
+    height : auto;
+}
+
+.link {
+    padding: 2rem;
+    padding-top: 10rem;
+    color: #071420;
+}
+
+.link a {
+    color: midnightblue;
+}
+
+.link a:hover {
+    color: coral;
+}
+
+.link a:visited {
+    color: sienna;
+}
+
+.link a:hover:visited {
+    color: blue;
+}
+
+footer {
+    text-align: center;
+    background-color: darkolivegreen;
+    padding: 55px 0;
+    padding-top: 1rem;
+    position: relative;
+    width: 100%;
+    grid-column: 1/3;
+    color: #fff;
+    font-weight: 450;
+    font-size: 1rem;
+}
