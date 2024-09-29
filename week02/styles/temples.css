@@ -1,0 +1,193 @@
+* {  
+    margin: 0;  
+    padding: 0;  
+    box-sizing: border-box;  
+}  
+
+body {  
+    font-family: 'Roboto', sans-serif;  
+    line-height: 1.6;  
+}  
+ 
+header {  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #460646; 
+    padding: 2rem;  
+}  
+
+h1 {  
+    font-size: 2rem;
+    color: #fff;  
+    margin: 0;  
+}  
+
+h2 {  
+    font-size: 1.2rem;
+    color: #460646;  
+    margin: 1rem 0;  
+    text-align: center;  
+}  
+
+nav {  
+    display: flex;  
+    align-items: center;  
+    justify-content: space-evenly;  
+    padding: 1rem;  
+}  
+
+.navigation {  
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;  
+}  
+ 
+nav a {  
+    color: #fff;  
+    text-decoration: none;
+    padding: 1rem;  
+    font-size: 1.1rem;  
+    font-weight: 400;  
+}  
+
+nav a:hover {  
+    text-decoration: none;  
+}  
+
+nav a:visited {  
+    color: midnightblue;  
+}  
+
+nav a:hover:visited {  
+    color: #000;  
+}  
+
+/* Hamburger Menu */  
+#menu {  
+    display: block;  
+    font-size: 2rem;  
+    font-weight: 400;
+    cursor: pointer;  
+    text-decoration: none;  
+    padding: 0.5rem 0.75rem;  
+    background-color: purple;  
+    border: 0;  
+    color: #fff;  
+    position: relative;  
+    right: 1rem;  
+}  
+
+#menu:hover {  
+    background-color: rgba(223, 154, 220, 0.5);  
+}  
+
+/* Hamburger Icon */  
+#menu::before {  
+    content: "☰";   
+}  
+#menu.open::before {  
+    content: "X";  
+}  
+  
+main {  
+    max-width: 100%;  
+    padding: 1.5rem;  
+    border: 1px solid #460646;  
+}  
+
+.gallery {  
+    display: grid;   
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));   
+    grid-gap: 2px;  
+    align-content: center;  
+}  
+
+figure {  
+    background-color: #fff;  
+    margin: 0;  
+    padding: .1rem;  
+}  
+
+img {  
+    width: 100%;  
+    height: auto;  
+    display: block;  
+} 
+
+figure:hover {
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+figcaption {  
+    text-align: center;  
+    color: #460646;  
+} 
+
+figcaption:hover {
+    background-color: purple;
+    color: #fff;
+}
+
+footer {  
+    background: #460646; 
+    color: white;  
+    text-align: center;  
+    padding: 3rem 0;  
+}  
+ 
+
+/* Media Query for Mobile View */  
+@media (max-width: 600px) {  
+    main {  
+        grid-template-columns: 1fr; 
+    }  
+
+    header {
+        background-color: purple;
+    }
+
+    .gallery {  
+        margin: 1rem; 
+    }  
+
+    .navigation {  
+        background-color: #E6E6FA;   
+        flex-direction: column;
+        color: #fff; 
+        top: 100px;   
+        right: 0;  
+        padding: 0.5rem 2rem;
+        position: absolute;   
+        width: 35%;
+    }  
+
+    /* Hide links by default */
+    .navigation li {  
+        display: none;   
+    }  
+
+    .navigation a {  
+        padding: 1rem;  
+        text-decoration: none;   
+        color: #000;   
+        font-weight: 600;  
+        transition: 0.3s;  
+        font-size: 1rem; 
+       
+    }  
+
+    .navigation a:hover, .navigation a:active {  
+
+        text-decoration: underline;  
+    }  
+
+    /* Show links when menu is open */ 
+    .open li {  
+        display: block;   
+    }  
+    footer {
+        background-color: purple;
+    }
+}
