@@ -1,39 +1,32 @@
-/* Media Query for Large Screens */  
-@media only screen and (min-width: 600px) {  
-    h1 {  
-        font-size: 2.5rem;  
-        color: #fff;  
-    }  
-    
-    h2 {  
-        font-size: 1.8rem;   
-    }  
+@media only screen and (min-width:600px) {
+    h1 {
+        font-size: 2.5rem;
+        color: #fff;
+    }
 
-    nav a {  
-        padding: 0 1.5rem;  
-        font-size: 1.2rem;  
-        font-weight: 400;  
-    }  
+    h2 {
+        font-size: 1.8rem;
+    }
 
-    nav a:hover {  
-        text-decoration: underline;  
-    }  
-    
-    nav a:visited {  
-        color: #87CEEB;  
-    }  
-    
-    nav a:hover:visited {  
-        color: #E6E6FA;  
-    }   
+    nav a {
+        padding: 0 1.5rem;
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
 
-    #menu {  
-        display: none;  
-    }  
+    nav a:hover {
+        text-decoration: underline;
+    }
 
-    .gallery {  
-        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));   
-        grid-gap: 2px;  
-        align-content: center;  
-    }  
-} 
+    nav a:visited {
+        color: #87CEEB;
+    }
+
+    nav a:hover:visited {
+        color: #E6E6FA;
+    }
+
+    #menu {
+        display: none;
+    }
+}
