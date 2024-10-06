@@ -1,0 +1,132 @@
+:root {
+    --primary-color: #008000;
+    --secondary-color: #fff;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: var(--primary-color);
+    padding: 1rem;
+}
+
+h1 {
+    font-size: 3rem;
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+.space {
+    padding: 3px 0;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: var(--primary-color);
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+h2 {
+    display: grid;
+}
+
+.weather img {
+    width: 100px;
+}
+
+section {
+    background-color: #eeeaea;
+    text-align: center;
+    margin-bottom: .3rem;
+}
+
+.weather {
+    margin-top: -3px;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+
+/* Media Queries */
+@media screen and (min-width: 640px) {
+    h1 {
+        font-size: 3rem;
+    }
+    main {
+        position: relative;
+    }
+
+    .details {
+        background-color: var(--secondary-color);
+        margin: 0;
+        text-align: center;
+        width: 250px;
+        opacity: .8;
+    }
+
+    h2 {
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+        width: 200px;
+        font-size: 1.3rem;
+        margin-left: -6px;
+    }
+
+    .data {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+
+    .data h2 {
+        text-align: left;
+        padding: .7rem;
+    }
+    
+    .weather {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .weather h2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: .3rem;
+    }
+
+    h2 img {
+        display: none;
+    }
+
+    h2 span::after {
+        content: "🌦️";
+        color: #fff;
+    }
+
+    footer {
+        margin-top: 0;
+        padding: 3rem;
+    }
+    
+    p {
+        margin: 5px;
+        padding: 0;
+    }
+    
+}
