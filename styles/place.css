@@ -39,6 +39,21 @@ h2 {
     display: grid;
 }
 
+.label {
+    text-align: right;
+    margin-right: 10px;
+    font-weight: bold;
+    width: 50%;
+}
+
+.data p, .weather p {
+    display: flex;
+}
+
+.data p span, .weather p span {
+    display: inline-block;
+}
+
 .weather img {
     width: 100px;
 }
@@ -115,7 +130,7 @@ footer {
     }
 
     h2 span::after {
-        content: "🌦️";
+        content: "⛅";
         color: #fff;
     }
 
