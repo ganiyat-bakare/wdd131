@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #460646;
+    padding: 2rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+h2 {
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+nav a {
+    padding: 0 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #add8e6;
+}
+
+nav a:visited {
+    color: #ffffe0;
+}
+
+nav a:hover:visited {
+    color: #d3d3d3;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+}
+
+#menu {
+    display: none;
+}
+
+nav a:active {
+    content: "📍";
+}
+
+main {
+    max-width: 100%;
+    padding: 1.5rem;
+    border: 1px solid #460646;
+}
+
+.temple-card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #edebeb;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 15px;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.temple-card:hover {
+    transform: scale(1.02);
+}
+
+.temple-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.8);
+    
+}
+
+.temple-name {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.temple-location,
+.temple-dedication,
+.temple-area {
+    font-size: 1rem;
+    margin: 5px 0;
+    color: #333;
+}
+
+.label {
+    font-weight: bold;
+    color: #460646;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 400px));
+    grid-gap: 2rem;
+    justify-content: center;
+    padding: 1rem;
+    margin: 0 20px;
+}
+
+footer {
+    background: #460646;
+    color: #fff;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+
+/* Media Query for Mobile View */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+        color: #fff;
+        margin: 0;
+    }
+    
+    h2 {
+        color: #460646;
+        margin: 1rem 0;
+        text-align: center;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+    } 
+
+    header {
+        background-color: purple;
+    }
+
+    .temple-card {
+        margin: 10px;
+    }
+
+    .gallery {
+        margin: 1rem;
+    }
+
+    /* Hamburger Menu */
+    #menu {
+        display: block;
+        font-size: 2rem;
+        font-weight: 400;
+        cursor: pointer;
+        text-decoration: none;
+        padding: 0.5rem 0.75rem;
+        background-color: purple;
+        border: 0;
+        color: #fff;
+        position: relative;
+        right: 1rem;
+    }
+    
+    #menu:hover {
+        background-color: rgba(223, 154, 220, 0.5);
+    }
+    
+    /* Hamburger Icon */
+    #menu::before {
+        content: "☰"; 
+    }
+    
+    #menu.open::before {
+        content: "X";
+    }
+
+    .navigation {
+        background-color: #E6E6FA;
+        flex-direction: column;
+        color: #fff;
+        top: 100px;
+        right: 0;
+        padding: .5rem 2rem;
+        position: absolute;
+        width: 35%;
+    }
+
+    /* Hide links by default */
+    .navigation li {
+        display: none;
+    }
+
+    nav a {
+        padding: 1rem;
+        text-decoration: none;
+        color: #000;
+        font-size: 1rem;
+        font-weight: 600;
+        transition: 0.3s;
+    }
+    
+    nav a:visited {
+        color: midnightblue;
+    }
+    
+    nav a:hover:visited {
+        color: #36454f;
+    }    
+
+    nav a:hover{
+        color: navy;
+    }
+
+    /* Show links when menu is open */
+    .open li {
+        display: block;
+    }
+
+    footer {
+        background-color: purple;
+    }
+}
