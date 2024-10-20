@@ -45,6 +45,7 @@ label {
     margin: 0;
     font-weight: bold;
     padding-top: 1rem;
+    color: #000;
 }
 
 input[type="text"],
@@ -155,16 +156,26 @@ input:required:valid {
     border-bottom: solid 8px green;
 }
 
-.feature {
-    font-weight: bold;
-    padding-top: rem;
+select, .date input {
+    color: #5b5858;
 }
 
-.rating label, .feature label {
+input[type="text"]::placeholder,
+textarea::placeholder {
+    color: #ccc;
+}
+
+.section {
+    font-weight: bold;
+    padding-top: 1rem;
+    color: #000;
+}
+
+.feature label {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 1px;
     color: #000;
 }
 
