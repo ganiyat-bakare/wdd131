@@ -63,6 +63,10 @@ nav a:hover:visited {
     color: #000;
 }
 
+nav a:active {
+    content: "📍";
+}
+
 /* Hamburger Menu */
 #menu {
     display: block;
@@ -142,7 +146,8 @@ footer {
 @media (max-width: 600px) {
     main {
         grid-template-columns: 1fr;
-    }    
+    }
+        
     header {
         background-color: purple;
     }
