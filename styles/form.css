@@ -1,0 +1,232 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Merriweather", serif;
+    color: #333;
+    background-color: #fff;
+    margin: 0;
+}
+
+header, footer {
+    background: #4b0082;
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+form, .rev {
+    font-size: 1rem;
+    max-width: 650px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #d3d3d3;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+fieldset {
+    margin: 0;
+    border: 1px solid #d3d3d3;
+    border-radius: 6px;
+    padding: 1rem;
+}
+
+label {
+    display: block;
+    margin: 0;
+    font-weight: bold;
+    padding-top: 1rem;
+}
+
+input[type="text"],
+input[type="date"],
+textarea,
+select {
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 150px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+footer {
+    font-size: 1rem;
+    padding: 2rem 5px;
+    font-family: "Roboto", sans-serif;
+}
+
+/* checkbox */
+input[type="checkbox"] { 
+    width: 20px;
+    height: 20px;
+    accent-color: #4b0082;
+}
+
+input[type="checkbox"]:hover {
+    color: #6a0dad;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #4b0082;
+    border: 2px solid #4b0082;
+    color: #fff;
+}
+
+
+/* stars */
+input[type="radio"] {
+    display: none;
+    position: relative;
+    caret-color: rgba(0, 0, 0, 0);
+}
+
+.stars {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+}
+
+.stars > label {
+    width: 40px;
+    height: 40px;
+    padding-top: 0;
+    font-size: 2rem;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    caret-color: rgba(0, 0, 0, 0);
+}
+
+.stars > label:hover {
+    color: gold;
+}
+
+.stars > label::before {
+    content: "\2606";
+}
+
+.stars input:checked ~ label::before {
+    content: "\2605";
+    color: #4b0082;
+}
+
+input[type="submit"] {
+    background-color: #4b0082;
+    background-image: linear-gradient(#6a0dad, #4b0082);
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    font-size: 18px;
+    margin-top: 10px;
+    box-shadow: 1px 1px 4px #999;
+}
+
+input[type="submit"]:hover {
+    background-color: #4b0082;
+}
+
+input:required:invalid {
+    border-left: solid 4px red;
+}
+
+input:required:valid {
+    border-bottom: solid 8px green;
+}
+
+.feature {
+    font-weight: bold;
+    padding-top: rem;
+}
+
+.rating label, .feature label {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+    color: #000;
+}
+
+.optional {
+    color: #4b0082;
+    font-weight: normal;
+    font-size: 0.9em;
+}
+
+.required {
+    color: #6f200e;
+    font-weight: normal;
+    font-size: 0.9em;
+}
+
+.rev h2, .rev p {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    margin: 0;
+    color: #4b0082;
+    padding: 1.5rem;
+}
+
+.rev p {
+    font-weight: bold;
+}
+
+
+@media (max-width: 650px) {
+    body {
+        margin: 1rem;
+    }
+    .stars {
+        justify-content: left;
+    }
+    
+    .stars > label {
+        color: black;
+        width: 30px;
+        height: 30px;
+        font-size: 2rem;
+        margin-left: 5px;
+        display: flex;
+        align-items: center;
+        caret-color: rgba(0, 0, 0, 0);
+    }
+    
+    .stars > label:hover {
+        color: #6a0dad;
+    }
+    
+    .stars input:checked ~ label::before {
+        content: "\2605";
+        color: gold;
+    }
+
+    header, main {
+        font-size: 1rem;
+    }
+
+    footer {
+        font-size: .9rem;
+    }   
+}

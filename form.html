@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review</title>
+    <meta name="author" content="Ganiyat Bose Bakare">
+    <meta name="description" content="Product review page">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html">
+            <fieldset>
+                <label>Product Name<span class="required">*</span>
+                    <select id="product" name="product" required>
+                        <option value="" disabled selected>Choose a Product ...</option>
+                    </select>
+                </label>
+
+                <label>Overall Rating<span class="required">*</span></label>
+                <div class="rating stars">
+                    <input type="radio" id="fivestar" name="rating" value="5" required>
+                    <label for="fivestar"></label>
+                    <input type="radio" id="fourstar" name="rating" value="4" required>
+                    <label for="fourstar"></label>
+                    <input type="radio" id="threestar" name="rating" value="3" required>
+                    <label for="threestar"></label>
+                    <input type="radio" id="twostar" name="rating" value="2" required>
+                    <label for="twostar"></label>
+                    <input type="radio" id="onestar" name="rating" value="1" required>
+                    <label for="onestar"></label>
+                </div>
+
+                <label>Date of Installation<span class="required">*</span><input type="date" id="date" name="installationDate" required></label>
+                
+                <div class="feature">Which features did you find useful in the product?</div>
+                <span>(Check all that apply)</span></div>
+                <div class="feature">
+                    <label><input type="checkbox" id="feature1" name="durability" value="yes">Durability</label>
+                    <label><input type="checkbox" id="feature2" name="usage" value="yes">Ease of Use</label>
+                    <label><input type="checkbox" id="feature3" name="performance" value="yes">Performance</label>
+                    <label><input type="checkbox" id="feature4" name="designing" value="yes">Design</label>
+                </div>
+                
+                <label for="write">Written Review <span class="optional">(Optional)</span>
+                    <textarea id="write" name="review" rows="5" placeholder="Text here..."></textarea>
+                </label>
+                
+                <label>Your Name <span class="optional">(Optional)</span>
+                    <input type="text" id="username" name="fullname" placeholder="Text here...">
+                </label>
+                
+                <input type="submit" value="Send Review">
+            </fieldset> 
+        </form>
+    </main>
+    <footer>
+        <p>
+            ©️<span id="currentyear"></span> 🌹 Ganiyat Bose Bakare 🌹 Nigeria
+        </p>
+        <p>
+            Last Modified: <span id="lastModified"></span>
+        </p>
+    </footer>
+</body>
+</html>
