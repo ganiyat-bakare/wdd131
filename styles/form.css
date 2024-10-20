@@ -1,5 +1,4 @@
 * {
-    padding: 0;
     box-sizing: border-box;
 }
 
@@ -220,10 +219,6 @@ input:required:valid {
     .stars input:checked ~ label::before {
         content: "\2605";
         color: gold;
-    }
-
-    header, main {
-        font-size: 1rem;
     }
 
     footer {
