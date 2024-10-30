@@ -1,0 +1,612 @@
+:root {
+    --primary-color: #1871D8;
+    --secondary-color:#CCC;
+    --background-color: #f9f9f9;
+    --neutral-color: #fff;
+    --accent1-color:#333;
+    --accent2-color:rgba(24, 114, 216, 0.5);
+    --accent3-color:#E74C3C;
+    --accent4-color:#C0392B;
+    --accent5-color: #050273;
+    --accent6-color: #ff7f50;
+    --accent7-color: #4a90e2;
+
+
+    --heading-font: "Tinos", serif;
+    --paragraph-font:  "Lato", sans-serif;
+
+    --heading-color: var(--neutral-color);
+    --highlight-color: var(--accent2-color);
+
+    --nav-background-color: var(--primary-color);
+    --nav-link-color: var(--neutral-color);
+    --nav-hover-link-color: var(--secondary-color);
+}    
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {  
+    font-family: var(--paragraph-font); 
+    line-height: 1.6;
+}  
+
+header { 
+    background-color: var(--primary-color); 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5rem;
+    font-family: var(--heading-font);
+    color: var(--neutral-color);   
+}  
+
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+nav a {
+    padding: 0 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--nav-link-color);
+    text-decoration: none;
+}
+
+nav a:hover {
+    font-weight: 800;
+    color: solid var(--neutral-color);
+    text-decoration: none;
+}
+
+nav a:visited {
+    text-decoration: underline;
+}
+
+nav a:hover:visited {
+    color: solid var(--neutral-color);
+    font-weight: 800;
+    text-decoration: none;
+}
+
+nav a:active {
+    content: "📍";
+}
+
+main {
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 0;
+    border: 1px solid var(--accent1-color);
+    text-align: center;
+    
+}
+
+legend {
+    padding: 0.5rem;
+    color: var(--accent5-color);
+    font-size: 1.3em;
+}
+
+label {
+    text-align: left;
+    padding-right: 0.5rem;
+}
+
+input {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+
+button:hover {
+    background-color: var(--primary-color);
+}
+
+input, textarea {  
+    width: 90%;  
+    max-width: 400px;  
+    margin: 10px auto;  
+    padding: 10px;  
+    border-radius: 5px;  
+    border: 1px solid var(--secondary-color);  
+}  
+
+button {  
+    padding: 10px 20px;  
+    border: none;  
+    border-radius: 5px;  
+    background-color: var(--primary-color);  
+    color: var(--neutral-color);  
+    cursor: pointer;  
+}
+
+article {
+    padding: 20px;
+}
+
+footer {  
+    padding: 1rem;
+    text-align: center;  
+    background-color: var(--accent1-color);  
+    color: var(--neutral-color);  
+}  
+
+footer nav {
+    padding: 0;
+}
+
+
+/* Class Selector */
+.grid h1 {
+    font-size: 2.5rem;
+}
+
+#menu {
+    display: none;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+}
+
+.blank {
+    padding: 3px;
+    background-color: var(--accent4-color);
+}
+
+.parent {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 450px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.slider {
+    width: 100%;
+    height: 450px;
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    background-image: url(../images/image1.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 10s;
+
+
+    animation-name: slide;
+    animation-direction: alternate-reverse;
+    animation-play-state: running;
+    animation-duration: 30s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slide {
+    0% {
+        background-image: url(../images/image2.webp);
+    }
+    20% {
+        background-image: url(../images/image3.webp);
+    }
+    40% {
+        background-image: url(../images/image4.webp);
+    }
+    60% {
+        background-image: url(../images/image5.webp);
+    }
+    80% {
+        background-image: url(../images/image6.webp);
+    }
+
+    100% {
+        background-image: url(../images/image1.webp);
+    }
+}
+
+.parent blockquote {
+    color: var(--neutral-color);
+    background-color: var(--accent2-color);
+    position: absolute;
+    font-family: var(--heading-font);
+    padding: 0 9.1rem;
+    margin: 0 auto; 
+    font-size: 40px;
+    top: 250px;
+}
+
+.parent h1 {
+    position: absolute;
+    top: 100px;
+    left: 290px;
+    color: var(--heading-color);
+    background-color: var(--highlight-color);
+    font-family: var(--heading-font);
+    padding: 0 5rem;
+    font-size: 40px;
+    margin: 0 auto; 
+}
+
+.contact img {
+    margin: 0 auto;
+    width: 100%;
+    height: 350px;
+    border: 2px solid var(--accent6-color);
+} 
+
+.newsletter {
+    font-size: 1.5em;
+    color: var(--accent5-color);
+    width: 450px;
+    margin: 50px 0 30px 40px;
+    padding: 1rem;
+    border: 1px solid var(--accent1-color);
+    border-radius: .5rem;
+    background-color: var(--accent6-color);
+}
+
+.newsletter fieldset {
+    margin: .5rem;
+    border: 1px solid var(--accent5-color);
+    padding: 1rem;
+}
+
+.items {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 1rem;
+}
+
+.newsletter input {
+    font-family: Montserrat, sans-serif;
+    color: var(--accent5-color);
+    border: 1px solid var(--accent5-color);
+}
+
+
+.newsletter button {
+    margin: 1rem;
+    width: 140px;
+    background-color: var(--accent5-color);
+    color: var(--neutral-color);
+    border: none;
+    border-radius: .5rem;
+    padding: 0.75rem;
+    font-size: 1.2rem;
+    justify-self: left;
+}
+
+.newsletter button:hover {  
+    background-color: var(--primary-color);  
+}
+
+.aside-links {  
+    display: flex;  
+    flex-wrap: wrap;   
+    gap: 20px;   
+    margin: 20px;  
+}  
+
+.newsletter {  
+    flex: 1 1 300px;   
+    max-width: 400px;  
+}  
+
+.link {  
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr);   
+    gap: 20px;  
+    flex: 1 1 400px;  
+}  
+
+.column {  
+    display: flex;  
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;  
+}  
+
+.column img {  
+    max-width: 100%;  
+    height: auto;   
+    border: 2px solid var(--accent6-color);  
+    border-radius: 5rem;   
+}  
+
+.column button {  
+    margin-top: 10px;  
+    padding: .5rem 1rem;   
+}  
+
+.column button:hover {  
+    background-color: var(--primary-color);   
+}
+
+.column button:hover {
+    background-color: var(--accent5-color);
+}
+
+.thanks header {
+    justify-content: center;
+}
+
+.rev div {
+    padding: 5rem;
+}
+
+.rev p {
+    padding: 5px;
+    margin-bottom: 1rem;
+}
+
+.rev a {
+    text-decoration: none;
+    background-color: var(--accent7-color);
+    color: var(--neutral-color);
+    margin-top: 2rem;
+    padding: 8px;
+    border-radius: .5rem;
+}
+
+.rev a:hover {
+    background-color: var(--primary-color);
+
+}
+
+#recipeForm {
+    display: grid;
+}
+
+
+#recipeForm 
+input[type="text"],
+input[type="file"],
+textarea {
+    width: 80%;
+    margin: 1px auto;
+    padding: 10px;
+    display: block;
+    border: 1px solid var(--secondary-color);
+}
+
+#recipeForm input[type="text"] {
+    padding: 14px;
+}
+
+#recipeForm select {
+    margin: 10px auto;
+    padding: 16px 146px;
+    border: 1px solid var(--secondary-color);
+    border-radius: .4rem;
+}
+
+
+#recipeForm button {
+    padding: 10px 20px;
+    border: none;
+    margin: 10px auto;
+}
+
+.contact form {
+    display: grid;
+}
+
+.contact button {
+    margin: 10px auto;
+}
+
+/* .gallery { */
+    /* margin: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 400px));
+    grid-gap: 2rem;
+    justify-content: center;
+    padding: 1rem; */
+
+
+    /* display: flex;  
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;  
+}   */
+
+
+.sociallinks img {
+    width: 40px;
+}
+
+.sociallinks:last-child {
+    justify-content: right;
+}
+
+.recipe-card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--background-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 8px;
+    margin: 15px;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.recipe-card:hover {
+    transform: scale(1.02);
+}
+
+.recipe-image {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 2px 16px var(--accent1-color)
+    
+}
+
+.recipe-name {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.recipe-type {
+    font-size: 1rem;
+    margin: 5px 0;
+    color: var(--accent1-color);
+}
+
+.label {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+/* Ensure the recipe container is flex-friendly */
+#recipesContainer {
+    display: flex;                    /* Use Flexbox for layout */
+    flex-wrap: wrap;                 /* Allow flex items to wrap into multiple rows */
+    justify-content: center;         /* Center items horizontally */
+    gap: 20px;                       /* Space between items (you can adjust this) */
+    margin: 0 auto;                 /* Center the container within the page */
+    padding: 20px;                  /* Add some padding around the container */
+    max-width: 1200px;              /* Limit the maximum width */
+}
+
+/* Each recipe card styling */
+.recipe-card {
+    width: 45%;                      /* Set width of each card (two items: 100% / 2 = 50%, with gap it gives roughly 45%) */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+    border-radius: 8px;             /* Slightly round corners */
+    overflow: hidden;                /* Prevent overflow from the card */
+    background-color: #fff;         /* Background color */
+    text-align: center;              /* Center text in the card */
+    padding: 16px;                  /* Padding inside each card */
+}
+
+/* Adjust image size to fit nicely */
+.recipe-card img {
+    max-width: 100%;                 /* Ensure the image fits within the card */
+    height: auto;                    /* Maintain aspect ratio */
+    border-radius: 8px;              /* Rounded corners for images */
+}
+
+
+
+/* Responsive Design */  
+@media (max-width: 600px) {
+    .grid h1 {
+        font-size: 2rem;
+        margin: 0;
+    }
+    
+    
+    h1 {
+        font-size: 2rem;
+        color: var(--neutral-color);
+        margin: 0;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+    } 
+
+    /* Hamburger Menu */
+    #menu {
+        display: block;
+        font-size: 2rem;
+        cursor: pointer;
+        text-decoration: none;
+        padding: 0.6rem;
+        background-color: var(--primary-color);
+        border: none;
+        color: var(--neutral-color);
+        position: relative;
+        right: .2rem;
+    }
+    
+    #menu:hover {
+        background-color: var(--accent7-color);
+    }
+    
+    
+    /* Hamburger Icon */
+    #menu::before {
+        content: "☰"; 
+    }
+    
+    #menu.open::before {
+        content: "X";
+    }
+
+    .navigation {
+        background-color: none;
+        flex-direction: column;
+        color: var(--neutral-color);
+        right: 60px;
+        padding: .5rem;
+        position: absolute;
+        width: 35%;
+        align-items: self-start;
+    }
+
+    /* Hide links by default */
+    .navigation li {
+        display: none;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: var(--neutral-color);
+        font-size: 1rem;
+        font-weight: 400;
+        transition: 0.3s;   
+    }
+
+    nav a:active {
+        text-decoration: underline;
+    }
+
+    /* Show links when menu is open */
+    .open li {
+        display: block;
+    }
+
+    .parent blockquote {
+        padding: 0 2rem;
+        font-size: 25px;
+        top: 240px;
+    }
+    
+    .parent h1 {
+        top: 160px;
+        left: 100px;
+        padding: 0 .7rem;
+        font-size: 25px;
+    }
+
+    .temple-card {
+        margin: 10px;
+    }
+
+    .gallery {
+        margin: 1rem;
+    }
+    
+}

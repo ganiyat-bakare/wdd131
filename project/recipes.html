@@ -1,0 +1,63 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Recipe Kingdom - Recipes</title>  
+    <meta name="author" content="Ganiyat Bose Bakare">  
+    <meta name="description" content="Recipe Kingdom Recipes and Instructions Page">  
+    <link rel="preconnect" href="https://fonts.googleapis.com">  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Tinos:wght@400;700&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="styles/recipe.css">  
+    <script src="scripts/recipe.js" defer></script>  
+</head>  
+<body>  
+    <header class="grid">  
+        <h1>Recipes</h1>  
+        <nav>  
+            <div id="menu"></div>  
+            <ul class="navigation">  
+                <li><a href="index.html">Home</a></li>  
+                <li><a href="recipes.html">Recipes</a></li>  
+                <li><a href="share.html">Share Recipe</a></li>  
+                <li><a href="contact.html">Contact Us</a></li>  
+            </ul>  
+        </nav>  
+    </header>
+    <div class="blank"></div>  
+
+    <main  class="view"> 
+        <div class="gallery"> 
+            <select id="categoryFilter">  
+            <option id="all" value="all">Recipe Home</option>
+            </select>  
+            <button id="loadRecipesButton">Load Recipes</button>  
+            <div id="recipesContainer"></div>
+        </div>  
+    </main>
+    <div class="blank"></div>  
+    <footer>
+        <nav>
+            <a href="./attribution.html">Attributions</a>
+        </nav>  
+        <p>
+            ©️<span id="currentyear"></span> 🌹 Ganiyat Bose Bakare 🌹 Nigeria
+        </p>
+        <p>
+            Last Modified: <span id="lastModified"></span>
+        </p> 
+        <nav class="sociallinks">
+            <a href="https://facebook.com">
+                <img src="images/facebook-logo.webp" alt="Facebook Logo">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/twitter.png" alt="Twitter Logo">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram-logo.webp" alt="Instagram Logo">
+            </a>
+        </nav>    
+    </footer> 
+</body>  
+</html>

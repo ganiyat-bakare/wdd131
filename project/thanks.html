@@ -1,0 +1,53 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Review Confirmation</title>  
+    <link rel="stylesheet" href="styles/recipe.css">  
+    <script src="scripts/recipe.js" defer></script>  
+</head>  
+<body class="thanks">  
+    <header>  
+        <h1>Thank You for Your Review!</h1>  
+    </header>  
+    <main class="rev">  
+        <div method="get" action="" class="confirmation-message">  
+            <p>Your review has been submitted successfully!</p>  
+            <p>We appreciate your feedback.</p>  
+            <p id="reviewCount">Reviews Submitted: </p>  
+            <p id="visitCount">Page Visits: </p>  
+            <a href="recipes.html">Back to Recipes</a>  
+        </div>  
+    </main>  
+    <footer>
+        <nav>
+            <a href="./attribution.html">Attributions</a>
+        </nav>  
+        <p>
+            ©️<span id="currentyear"></span> 🌹 Ganiyat Bose Bakare 🌹 Nigeria
+        </p>
+        <p>
+            Last Modified: <span id="lastModified"></span>
+        </p> 
+        <nav class="sociallinks">
+            <a href="https://facebook.com">
+                <img src="images/facebook-logo.webp" alt="Facebook Logo">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/twitter.png" alt="Twitter Logo">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram-logo.webp" alt="Instagram Logo">
+            </a>
+        </nav>    
+
+    </footer>  
+    <script>  
+        document.addEventListener('DOMContentLoaded', () => {  
+            const visitCount = localStorage.getItem('visitCount') || 0;  
+            document.getElementById('visitCount').textContent = `Page Visits: ${visitCount}`;  
+        });  
+    </script>  
+</body>  
+</html>

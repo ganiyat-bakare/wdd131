@@ -1,0 +1,100 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Recipe Kingdom - Home</title>
+    <meta name="author" content="Ganiyat Bose Bakare">
+    <meta name="description" content="Kingdom Recipe Home Page">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Tinos:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/recipe.css">  
+    <script src="scripts/recipe.js" defer></script>    
+</head>  
+<body>  
+    <header class="grid">
+       <!-- <img src="images/website-logo.jpg" alt="Recipe kingdom Site Logo">   -->
+        <h1>Recipe Kingdom</h1>  
+        <nav>
+            <div id="menu"></div>  
+            <ul class="navigation">  
+                <li><a href="index.html">Home</a></li>  
+                <li><a href="recipes.html">Recipes</a></li>  
+                <li><a href="share.html">Share Recipe</a></li>  
+                <li><a href="contact.html">Contact Us</a></li>  
+            </ul>  
+        </nav>  
+    </header>
+    <div class="blank"></div>  
+    <main>  
+        <section class="parent">
+            <div class="slider">
+            </div>
+
+            <h1>Welcome to Recipe Kingdom!</h1>
+            <blockquote>Discover easy-to-make recipes and share your creations!</blockquote> 
+        </section>
+        <section class="aside-links">  
+            <form method="get" action="thanks.html" class="newsletter">  
+                <fieldset>  
+                    <legend>Sign Up For Our Newsletter</legend>  
+                    <div class="items">  
+                        <label for="fullname">Name:</label>  
+                        <input type="text" id="fullname" name="fullname">  
+                    </div>  
+                    <div class="items">  
+                        <label for="useremail">Email:</label>  
+                        <input type="email" id="useremail" name="useremail">  
+                    </div>  
+                </fieldset>  
+                <button type="submit" id="link" name="link" onclick="location.href='./confirmation'">Sign Up</button>  
+            </form>  
+        
+            <div class="link">  
+                <aside class="column link1">  
+                    <img src="images/appetizer-link.webp" alt="a-salad-in-a-bowl-with-dressing-being-drizzled-over-it" loading="lazy">  
+                    <button type="button" onclick="location.href='./recipes.html?filter=appetizers'">Check Out Our Appetizers</button>  
+                </aside>  
+                <aside class="column link2">  
+                    <img src="images/course-link.webp" alt="bowl-of-cooked-food" loading="lazy">  
+                    <button type="button" onclick="location.href='./recipes.html?filter=main-courses'">Check Out Our Main Courses</button>  
+                </aside>  
+                <aside class=" column link3">  
+                    <img src="images/dessert-link.webp" alt="cake-on-cake-stand-beside-milk-on-milk-bottles" loading="lazy">  
+                    <button type="button" onclick="location.href='./recipes.html?filter=desserts'">Check Out Our Desserts</button>  
+                </aside>  
+                <aside class="column link4">  
+                    <img src="images/beverage-link.webp" alt="Zobo drink in a two glass jar" loading="lazy">  
+                    <button type="button" onclick="location.href='./recipes.html?filter=beverages'">Check Out Our Beverages</button>  
+                </aside>  
+            </div>  
+        </section>
+    </main>
+    <div class="blank"></div>  
+    <footer>
+        <nav>
+            <a href="./attribution.html">Attributions</a>
+        </nav>  
+        <p>
+            ©️<span id="currentyear"></span> 🌹 Ganiyat Bose Bakare 🌹 Nigeria
+        </p>
+        <p>
+            Last Modified: <span id="lastModified"></span>
+        </p> 
+        <nav class="sociallinks">
+            <a href="https://facebook.com">
+                <img src="images/facebook-logo.webp" alt="Facebook Logo">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/twitter.png" alt="Twitter Logo">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram-logo.webp" alt="Instagram Logo">
+            </a>
+        </nav>    
+
+    </footer>  
+</body>  
+</html>
+
