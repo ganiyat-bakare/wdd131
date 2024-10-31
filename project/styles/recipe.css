@@ -28,7 +28,6 @@
 }
 
 body {  
-    font-family: var(--paragraph-font); 
     line-height: 1.6;
 }  
 
@@ -143,8 +142,9 @@ footer {
     color: var(--neutral-color);  
 }  
 
-footer nav {
-    padding: 0;
+footer a {
+    color: var(--neutral-color);
+    text-decoration: none;
 }
 
 
@@ -514,13 +514,13 @@ textarea::placeholder {
 }
 
 .optional {
-    color: var(--primary-color);
+    color: var(--accent5-color);
     font-weight: normal;
     font-size: 0.9em;
 }
 
 .required {
-    color: var(--accent4-color);
+    color: #000;
     font-weight: normal;
     font-size: 0.9em;
 }
@@ -610,7 +610,7 @@ textarea::placeholder {
 
 
 /* Responsive Design */  
-@media (max-width: 600px) {
+@media (max-width: 650px) {
     .grid h1 {
         font-size: 2rem;
         padding-left: 10px;
