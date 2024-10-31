@@ -34,30 +34,55 @@
             </select>  
             <button id="loadRecipesButton">Load Recipes</button>  
             <div id="recipesContainer"></div>
-        </div>  
+        </div> 
+        
+        <div class="review-section">  
+            <h3>Leave a Review</h3>  
+            <form method="get" action="review.html" id="reviewForm">  
+                <fieldset>
+                    <label>Recipe Name<span class="required">*</span>
+                        <select id="recipe" name="recipe" required>
+                            <option value="" disabled selected>Choose a Recipe ...</option>
+                        </select>
+                    </label>
+
+                    <label>Rating: <span class="required">*</span></label>
+                    <div class="rating stars">
+                        <input type="radio" id="fivestar" name="rating" value="5" required>
+                        <label for="fivestar"></label>
+                        <input type="radio" id="fourstar" name="rating" value="4" required>
+                        <label for="fourstar"></label>
+                        <input type="radio" id="threestar" name="rating" value="3" required>
+                        <label for="threestar"></label>
+                        <input type="radio" id="twostar" name="rating" value="2" required>
+                        <label for="twostar"></label>
+                        <input type="radio" id="onestar" name="rating" value="1" required>
+                        <label for="onestar"></label>
+                    </div> 
+
+                    <label>Your Name <span class="optional">(Optional)</span>
+                        <input type="text" id="username" name="fullname" placeholder="Text here...">
+                    </label>
+
+
+                    <label for="write">Your Review <span class="optional">(Optional)</span>
+                        <textarea id="write" name="review" rows="3" placeholder="Text here..."></textarea>
+                    </label>  
+
+                    <input type="submit" value="Send Review">  
+                </fieldset>
+            </form>  
+        </div>
     </main>
     <div class="blank"></div>  
-    <footer>
-        <nav>
-            <a href="./attribution.html">Attributions</a>
-        </nav>  
+    <footer>  
         <p>
             ©️<span id="currentyear"></span> 🌹 Ganiyat Bose Bakare 🌹 Nigeria
         </p>
         <p>
             Last Modified: <span id="lastModified"></span>
         </p> 
-        <nav class="sociallinks">
-            <a href="https://facebook.com">
-                <img src="images/facebook-logo.webp" alt="Facebook Logo">
-            </a>
-            <a href="https://twitter.com">
-                <img src="images/twitter.png" alt="Twitter Logo">
-            </a>
-            <a href="https://instagram.com">
-                <img src="images/instagram-logo.webp" alt="Instagram Logo">
-            </a>
-        </nav>    
+        <a href="./attribution.html">Attributions</a>
     </footer> 
 </body>  
 </html>

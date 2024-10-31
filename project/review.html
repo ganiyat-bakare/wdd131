@@ -1,0 +1,63 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Review Confirmation</title>  
+    <link rel="stylesheet" href="styles/recipe.css">  
+    <script src="scripts/recipe.js" defer></script>  
+</head>  
+<body class="thanks">  
+    <header>  
+        <h1>Thank You for Your Submission!</h1>  
+    </header>  
+    <main class="rev">  
+        <div class="confirmation-message">  
+            <p id="personalMessage"></p>  
+            <p>We appreciate your enthusiasm.</p>    
+            <p id="visitCount">Page Visits: </p>
+            <a href="recipes.html">Back to Recipes</a>  
+        </div>  
+    </main>  
+    <footer>   
+        <p>  
+            ©️<span id="currentyear"></span> 🌹 Ganiyat Bose Bakare 🌹 Nigeria  
+        </p>  
+        <p>  
+            Last Modified: <span id="lastModified"></span>  
+        </p>  
+        <a href="./attribution.html">Attributions</a>    
+    </footer>  
+
+    <script> 
+        const currentYear = new Date().getFullYear();  
+        document.getElementById("currentyear").textContent = ` ${currentYear}`;  
+        document.getElementById("lastModified").innerHTML = document.lastModified;  
+
+
+        document.addEventListener('DOMContentLoaded', () => {  
+            const visitCount = localStorage.getItem('visitCount') || 0;  
+            document.getElementById('visitCount').textContent = `Page Visits: ${visitCount}`;  
+            
+            const selectedRecipe = recipes.find(recipe => recipe.name === recipename);  
+
+
+ 
+            const urlParams = new URLSearchParams(window.location.search);  
+            const name = urlParams.get('fullname');  
+            const rating = urlParams.get('rating');  
+
+             
+            if (name && rating) {  
+                document.getElementById('personalMessage').textContent = `Your review of ${rating} stars has been submitted successfully, ${name}!`;  
+            } else {  
+                document.getElementById('personalMessage').textContent = `Your review has been submitted successfully!`;  
+            }  
+
+            
+            const reviewCount = localStorage.getItem('reviewCount') || 0;
+            document.getElementById('reviewCount').textContent = `Reviews Submitted: ${reviewCount}`;  
+        });  
+    </script>  
+</body>  
+</html>
