@@ -9,7 +9,7 @@
     { name: "Chicken & Strawberry Salad", type: "main-course", ingredients: "Strawberries, Spinach, Onions, Carrot, Chicken breast", instructions: "Grill the chicken breast under a medium/high heat until cooked (approx 15-20 mins), then slice. Place the spinach on a plate then layer over with the rest of the ingredients", imageUrl: "images/chic.webp" },  
     { name: "Stuffed Mushrooms", type: "appetizer", ingredients: "Mushrooms, Pine nuts and panko bread crumbs, Dried tomato and pecorino cheese, Parsley, Garlic, Olive oil, Salt and pepper.", instructions: "Clean the mushrooms. Stirfry it with grated cheese, tomatoes, pasrley, bread crumbs, garlic, pine nuts, salt and a few grinds of black pepper.", imageUrl: "images/appet3.webp" },  
 
-];  
+]; 
 
 // Function to populate form dropdown recipe
 function populateRecipeSelect() {
@@ -22,6 +22,7 @@ function populateRecipeSelect() {
         recipeSelect.appendChild(option);
     });
 }
+
 
 // Function to handle form submission
 function handleFormSubmit(event) {  
@@ -141,5 +142,5 @@ document.addEventListener('DOMContentLoaded', () => {
     };  
 
      // Populate filter dropdown 
-    filterCategories(); 
+    filterCategories();
 });

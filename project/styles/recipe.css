@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #1871D8;
+    --primary-color: #050273;
     --secondary-color:#CCC;
     --background-color: #f9f9f9;
     --neutral-color: #fff;
@@ -7,7 +7,7 @@
     --accent2-color:rgba(24, 114, 216, 0.5);
     --accent3-color:#E74C3C;
     --accent4-color:#C0392B;
-    --accent5-color: #050273;
+    --accent5-color: #1871d8;
     --accent6-color: #ff7f50;
     --accent7-color: #4a90e2;
 
@@ -88,7 +88,7 @@ main {
 
 legend {
     padding: 0.5rem;
-    color: var(--accent5-color);
+    color: var(--primary-color);
     font-size: 1.3em;
 }
 
@@ -103,7 +103,7 @@ input {
 }
 
 button:hover {
-    background-color: var(--primary-color);
+    background-color: var(--accent5-color);
 }
 
 input, textarea, select {  
@@ -254,7 +254,7 @@ footer a {
 
 .newsletter {
     font-size: 1.5em;
-    color: var(--accent5-color);
+    color: var(--primary-color);
     width: 450px;
     margin: 50px 0 30px 40px;
     padding: 1rem;
@@ -265,7 +265,7 @@ footer a {
 
 .newsletter fieldset {
     margin: .5rem;
-    border: 1px solid var(--accent5-color);
+    border: 1px solid var(--primary-color);
     padding: 1rem;
 }
 
@@ -277,15 +277,15 @@ footer a {
 
 .newsletter input {
     font-family: Montserrat, sans-serif;
-    color: var(--accent5-color);
-    border: 1px solid var(--accent5-color);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
 }
 
 
 .newsletter button {
     margin: 1rem;
     width: 140px;
-    background-color: var(--accent5-color);
+    background-color: var(--primary-color);
     color: var(--neutral-color);
     border: none;
     border-radius: .5rem;
@@ -295,7 +295,7 @@ footer a {
 }
 
 .newsletter button:hover {  
-    background-color: var(--primary-color);  
+    background-color: var(--accent5-color);  
 }
 
 .aside-links {  
@@ -492,7 +492,7 @@ input[type="radio"] {
 .review-section 
 input[type="submit"] {
     background-color: var(--accent7-color);
-    background-image: linear-gradient(var(--accent7-color), var(--primary-color));
+    background-image: linear-gradient(var(--accent7-color), var(--accent5-color));
     color: var(--neutral-color);
     padding: 10px;
     width: 100%;
