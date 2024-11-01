@@ -1,4 +1,25 @@
- const recipes = [  
+
+// Function to generate recipe cards  
+function loadFeaturedRecipes() {  
+    const recipeContainer = document.querySelector('.recipe-container');  
+    featuredRecipes.forEach(recipe => {  
+        const recipeCard = `  
+            <div class="recipe-card">  
+                <img src="${recipe.image}" alt="${recipe.title}">  
+                <h3 class="recipe-name">${recipe.title}</h3>  
+                <p class="recipe-cuisine">${recipe.cuisine}</p>  
+                <a href="${recipe.main-course}" class="view-recipe">View Recipe</a>  
+            </div>  
+        `;  
+        recipeContainer.innerHTML += recipeCard;  
+    });  
+}  
+
+// Call the function on load  
+window.onload = loadFeaturedRecipes;  
+
+
+const recipes = [  
     { name: "Avocado & Coconut Cream Smoothie", type: "beverage", ingredients: "Avocado, Vanilla extract, Greek yogurt, Coconut cream", instructions: "Blend all ingredients until smooth.", imageUrl: "images/bev1.webp" },  
     { name: "Pina Colada Smoothie", type: "beverage", ingredients: "Pineapple chunks, Mango chunks, Coconut milk, Honey, Banana", instructions: "Blend all ingredients until thick and creamy.", imageUrl: "images/bev2.webp" },  
     { name: "Bruschetta", type: "appetizer", ingredients: "Extra-virgin olive oil, Garlic, Tomatoes, Salt, Basil, Balsamic vinegar, Crushed red pepper flakes, Baguette", instructions: "Stir-fry garlic. Add tomato. Add basil. Add vinegar. Add pepper flakes. Let it marinate for 30 minutes. Spread on bread brushed with oil. Toast bread and serve.", imageUrl: "images/appet1.webp" },  
@@ -8,6 +29,7 @@
     { name: "Green Bean and Chicken Stir Fry", type: "main-course", ingredients: "Butter, Boneless skinless chicken, Green beans, Black pepper, Salt, Red pepper flakes, Onion powder, Garlic, Lemon, Soy sauce, honey ", instructions: "Mix all the wet ingrdients in a bowl and add cornstarch. Heat butter, add green bean season it. Saute garlic in mixture and stir fry.", imageUrl: "images/main.webp" },  
     { name: "Chicken & Strawberry Salad", type: "main-course", ingredients: "Strawberries, Spinach, Onions, Carrot, Chicken breast", instructions: "Grill the chicken breast under a medium/high heat until cooked (approx 15-20 mins), then slice. Place the spinach on a plate then layer over with the rest of the ingredients", imageUrl: "images/chic.webp" },  
     { name: "Stuffed Mushrooms", type: "appetizer", ingredients: "Mushrooms, Pine nuts and panko bread crumbs, Dried tomato and pecorino cheese, Parsley, Garlic, Olive oil, Salt and pepper.", instructions: "Clean the mushrooms. Stirfry it with grated cheese, tomatoes, pasrley, bread crumbs, garlic, pine nuts, salt and a few grinds of black pepper.", imageUrl: "images/appet3.webp" },  
+    { name: "Sushi Rolls", type: "main-course", ingredients: "6 Sushi seaweed sheets, 1 batch Prepared sushi rice, 1/2 lb Sashimi-grade raw salmon, 4 oz cream cheese, 1 avocado, Soy sauce.", instructions: "Place the seaweed on a bamboo mat, cover with an even layer of sushi rice and smoothen. Layer salmon, cream cheese, and avocado on the rice and roll it up. Slice with knife and eat it with soy sauce.", imageUrl: "images/sushi-rolls.webp" },  
 
 ]; 
 

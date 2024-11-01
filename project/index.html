@@ -27,14 +27,76 @@
     </header>
     <div class="blank"></div>  
     <main>
-        <section class="parent">
+        <div class="parent">
             <div class="slider">
             </div>
 
             <h1>Welcome to Recipe Kingdom!</h1>
             <blockquote>Discover easy-to-make recipes and share your creations!</blockquote> 
-        </section>
-        <section class="aside-links">  
+        </div>
+
+        <section id="featuredRecipes">  
+            <h2>Featured Recipes</h2>  
+            <div class="recipe-container">  
+                <div class="recipe-card">  
+                    <img src="images/course1.webp" alt="A plate of Spaghetti carbonara">  
+                    <h3 class="recipe-name">Spaghetti Carbonara</h3>  
+                    <p class="recipe-type">Italian</p> 
+                    <p>Time: 30 minutes</p> 
+                    <a href="./recipes.html?recipes?filter=spaghetti-carbonara" class="view-recipe">View Recipe</a>  
+                </div>  
+                <div class="recipe-card">  
+                    <img src="images/sushi-rolls.webp" alt="A plate of sushi rolls and soy sauce">  
+                    <h3 class="recipe-name">Sushi Rolls</h3> 
+                    <p class="recipe-type">Japanese</p> 
+                    <p>Time: 15 minutes</p> 
+                    <a href="./recipes.html?filter=main-course" class="view-recipe">View Recipe</a>  
+                </div>  
+                <div class="recipe-card">  
+                    <img src="images/chic.webp" alt="A bowl filled with chicken-strawberry-salad">  
+                    <h3 class="recipe-name">Chicken and Strawberry Salad</h3>  
+                    <p class="recipe-type">American</p> 
+                    <p>Time: 35 minutes</p> 
+                    <a href="./recipes.html?filter=main-course" class="view-recipe">View Recipe</a>  
+                </div>  
+            </div>  
+        </section> 
+        
+        <section class="cooking-tips">  
+            <h2>Cooking Tips</h2>  
+            <ul>  
+                <li>Always taste your dish before serving to adjust seasoning.</li>  
+                <li>Invest in a good quality knife to make your prep work easier.</li>  
+                <li>Use fresh ingredients for the best flavor and nutrition.</li>  
+                <li>Don't be afraid to experiment with herbs and spices to create your own twist on recipes!</li>  
+            </ul>  
+        </section>  
+        
+      
+        <section id="testimonials">  
+            <h2>What Our Users Say</h2>  
+            <div class="testimonial-container">
+                <blockquote>  
+                    <p>"The community support is amazing, and I’ve learned so much from sharing my own recipes!"</p>  
+                    <footer>- James T.</footer>  
+                </blockquote> 
+                <blockquote>  
+                    <p>"Recipe Kingdom changed my cooking game! I love trying out new recipes every week!"</p>  
+                    <footer>- Sarah J.</footer>  
+                </blockquote>   
+                <blockquote>  
+                    <p>"This website has transformed my cooking experience! Every recipe has been a hit!"</p>  
+                    <footer>- Happy Cook</footer>  
+                </blockquote>  
+                <blockquote>  
+                    <p>"I love the layout and how easy it is to search for recipes!"</p>  
+                    <footer>- Recipe Enthusiast</footer>  
+                </blockquote>  
+            </div>  
+        </section>  
+          
+        
+        <div class="aside-links">  
             <form method="get" action="review.html" class="newsletter">  
                 <fieldset>  
                     <legend>Sign Up For Our Newsletter</legend>  
@@ -68,6 +130,14 @@
                     <button type="button" onclick="location.href='./recipes.html?filter=beverages'">Check Out Our Beverages</button>  
                 </aside>  
             </div>  
+        </div>
+        <section id="quickLinks">  
+            <h2>Quick Links</h2>  
+            <ul>  
+                <li><a href="./recipes.html">Popular Recipes</a></li>  
+                <li><a href="#">Meal Prep Ideas</a></li>  
+                <li><a href="#">Grocery List Template</a></li>  
+            </ul>  
         </section>
     </main>
     <div class="blank"></div>  
@@ -79,6 +149,17 @@
             Last Modified: <span id="lastModified"></span>
         </p> 
         <a href="./attribution.html">Attributions</a>
+        <nav class="sociallinks">
+            <a href="https://www.facebook.com/Booustagal/">
+                <img src="images/facebook.webp" alt="Facebook Logo">
+            </a>
+            <a href="https://www.linkedin.com/in/ganiyat-bakare-864501152?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BPScWsCr2Qc%2Bx779EAJmUdw%3D%3D">
+                <img src="images/linkedin.webp" alt="LinkedIn Logo">
+            </a>
+            <a href="https://www.instagram.com/">
+                <img src="images/instagram.webp" alt="Instagram Logo">
+            </a>
+        </nav>
     </footer>  
 </body>  
 </html>

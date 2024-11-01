@@ -27,7 +27,7 @@
     </header>  
     <div class="blank"></div>  
     <main> 
-        <h2>Inspire Us With Your Recipes</h2> 
+        <h2>Inspire Us With Your Amazing Creations</h2> 
         <form method="get" action="review.html" id="recipeForm">   
             <input type="text" id="dishName" placeholder="Dish Name" required>  
             <select id="recipeType">  
@@ -38,7 +38,7 @@
             </select>
             <textarea id="recipeIngredients" placeholder="Ingredients" required></textarea>
             <textarea id="recipeInstructions" placeholder="Recipe Instructions" required></textarea>
-            <input type="file" id="imageUpload" accept="image/*" required>
+            <label for="imageUpload"></label> <input type="file" id="imageUpload" accept="image/*" required>
             <button type="submit">Send Recipe</button>
         </form>  
         <div id="submissionMessage"></div>  
@@ -51,7 +51,18 @@
         <p>
             Last Modified: <span id="lastModified"></span>
         </p>
-        <a href="./attribution.html">Attributions</a>    
+        <a href="./attribution.html">Attributions</a>
+        <nav class="sociallinks">
+            <a href="https://www.facebook.com/Booustagal/">
+                <img src="images/facebook.webp" alt="Facebook Logo">
+            </a>
+            <a href="https://www.linkedin.com/in/ganiyat-bakare-864501152?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BPScWsCr2Qc%2Bx779EAJmUdw%3D%3D">
+                <img src="images/linkedin.webp" alt="LinkedIn Logo">
+            </a>
+            <a href="https://www.instagram.com/">
+                <img src="images/instagram.webp" alt="Instagram Logo">
+            </a>
+        </nav>  
     </footer>  
 </body>  
 </html>
